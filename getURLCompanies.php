@@ -1,8 +1,4 @@
 <?php
-$googleHostname = "https://www.google.dk";
-$googlePath = "/search?";
-$googleSearchQueryParam = "q=";
-
 $companyNames = [
 'A.P. Møller - Mærsk',
 'Novo Nordisk',
@@ -1006,7 +1002,19 @@ $companyNames = [
 'Soya Concept'
 ];
 
+$urlEncodeCompanyName = New array();
+$noOfCompanies = count(companyNames);
+for ($i=0; $i <noOfCompanies ; $i++) { 
+	$newCompName = urlencode(companyNames[i]);
+	array_push($urlEncodeCompanyName, $newCompName);
+}
 
-A.P.+M%C3%B8ller+-+M%C3%A6rsk&oq=A.P.+M%C3%B8ller+-+M%C3%A6rsk&aqs=chrome..69i57j0l5.342j0j7&sourceid=chrome&ie=UTF-8
+print_r($urlEncodeCompanyName);
+/*
+$googleHostname = "https://www.google.dk";
+$googlePath = "/search?";
+$googleSearchQueryParam = "q=";
 
-->
+
+$googleQuery = $googleHostname.$googlePath.$googleSearchQueryParam.$companyNames[1];
+->*/
