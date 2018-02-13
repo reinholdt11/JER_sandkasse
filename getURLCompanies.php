@@ -1002,8 +1002,13 @@ $companyNames = [
 'Soya Concept'
 ];
 
+echo "test";
+
+/*
+
 $urlEncodeCompanyName = New array();
 $noOfCompanies = count(companyNames);
+
 for ($i=0; $i <noOfCompanies ; $i++) { 
 	$newCompName = urlencode(companyNames[i]);
 	array_push($urlEncodeCompanyName, $newCompName);
@@ -1011,7 +1016,7 @@ for ($i=0; $i <noOfCompanies ; $i++) {
 
 echo $urlEncodeCompanyName;
 echo $companyNames;
-/*
+
 $googleHostname = "https://www.google.dk";
 $googlePath = "/search?";
 $googleSearchQueryParam = "q=";
