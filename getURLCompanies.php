@@ -1002,7 +1002,7 @@ $companyNames = [
 'Soya Concept'
 ];
 
-echo "test";
+echo $companyNames[1];
 
 /*
 
