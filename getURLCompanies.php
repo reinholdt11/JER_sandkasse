@@ -1009,8 +1009,8 @@ for ($i=0; $i <noOfCompanies ; $i++) {
 	array_push($urlEncodeCompanyName, $newCompName);
 }
 
-print_r($urlEncodeCompanyName);
-print_r($companyNames);
+echo $urlEncodeCompanyName;
+echo $companyNames;
 /*
 $googleHostname = "https://www.google.dk";
 $googlePath = "/search?";
