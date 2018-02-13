@@ -1010,6 +1010,7 @@ for ($i=0; $i <noOfCompanies ; $i++) {
 }
 
 print_r($urlEncodeCompanyName);
+print_r($companyNames);
 /*
 $googleHostname = "https://www.google.dk";
 $googlePath = "/search?";
